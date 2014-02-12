@@ -1,4 +1,4 @@
-package psd3teamt;
+package ggow.teamt.bookingSystem.HelloWorld;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
