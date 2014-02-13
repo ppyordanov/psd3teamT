@@ -1,19 +1,19 @@
 package ggow.teamt.bookingSystem.users;
 
-public class User {
+public class Student {
 
 	public String firstName;
 	public String lastName;
 	public String ID;
 	public String userType;
-	public boolean isStaff;
+	public boolean isAlsoTutor;
 
-	public User(String firstName, String lastName, String ID, String userType, boolean isStaff){
+	public Student(String firstName, String lastName, String ID, String userType, boolean isStaff){
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.ID = ID;
 		this.userType = userType;
-		this.isStaff = isStaff;
+		this.isAlsoTutor = isAlsoTutor;
 	}
 
 	public String getFirstName() {
@@ -48,12 +48,12 @@ public class User {
 		this.userType = userType;
 	}
 
-	public boolean isStaff() {
-		return isStaff;
+	public boolean isAlsoTutor() {
+		return isAlsoTutor;
 	}
 
-	public void setStaff(boolean isStaff) {
-		this.isStaff = isStaff;
+	public void setTutor(boolean isAlsoTutor) {
+		this.isAlsoTutor = isAlsoTutor;
 	}
 	
 	

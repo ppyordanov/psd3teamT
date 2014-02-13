@@ -1,4 +1,4 @@
-package ggow.teamt.bookingSystem.locations;
+package ggow.teamt.bookingSystem.course;
 
 import com.javadocmd.simplelatlng.LatLng;
 

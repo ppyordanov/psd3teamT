@@ -1,7 +1,5 @@
 package ggow.teamt.bookingSystem.course;
 
-import ggow.teamt.bookingSystem.session.Session;
-
 import java.util.ArrayList;
 
 public class Course {

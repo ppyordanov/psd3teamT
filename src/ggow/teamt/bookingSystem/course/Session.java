@@ -1,9 +1,6 @@
-package ggow.teamt.bookingSystem.session;
+package ggow.teamt.bookingSystem.course;
 
 import java.sql.Time;
-
-import ggow.teamt.bookingSystem.course.Course;
-import ggow.teamt.bookingSystem.locations.Location;
 
 public class Session {
 
