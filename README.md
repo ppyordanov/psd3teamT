@@ -24,4 +24,4 @@ Alastair Weir - 1101682w
 Keir Smith - 1102028s
 Gordon Adam - 1107425a
 Peter Yordanov - 1103620y
-George Dimitrov -
+Georgi Dimitrov - 1003626d
