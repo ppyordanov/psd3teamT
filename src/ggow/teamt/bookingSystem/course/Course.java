@@ -1,16 +1,21 @@
 package ggow.teamt.bookingSystem.course;
 
-import java.util.ArrayList;
+import ggow.teamt.bookingSystem.users.Lecturer;
+
+import java.util.LinkedList;
 
 public class Course {
 
-	public String name;
-	public int classSize;
-	public ArrayList<Session> sessions;
+	protected String name;
+	protected int classSize;
+	protected LinkedList<Session> sessions;
+	protected Lecturer lecturer;
 	
-	public Course(String name, int classSize){
+	public Course(String name, int classSize, LinkedList<Session> sessions, Lecturer lecturer){
 		this.name = name;
 		this.classSize = classSize;
+		this.lecturer = lecturer;
+		this.sessions = sessions;
 	}
 
 	public String getName() {
@@ -21,12 +26,33 @@ public class Course {
 		this.name = name;
 	}
 
+	public LinkedList<Session> getSessions() {
+		return sessions;
+	}
+
+	public void setSessions(LinkedList<Session> sessions) {
+		this.sessions = sessions;
+	}
+
+	public Lecturer getLecturer() {
+		return lecturer;
+	}
+
+	public void setLecturer(Lecturer lecturer) {
+		this.lecturer = lecturer;
+	}
+
 	public int getClassSize() {
 		return classSize;
 	}
 
 	public void setClassSize(int classSize) {
 		this.classSize = classSize;
+	}
+	
+	public String toString(){
+		String info = "Course name: " + this.name + "\nClass size: " + this.classSize + "\nSessions: " + this.sessions.toString() + "\nLecturer: " + this.lecturer;
+		return info;
 	}
 	
 }
