@@ -1,60 +1,35 @@
 package ggow.teamt.bookingSystem.users;
 
-public class Student {
+import java.util.LinkedList;
 
-	public String firstName;
-	public String lastName;
-	public String ID;
-	public String userType;
-	public boolean isAlsoTutor;
+public class Student extends User{
 
-	public Student(String firstName, String lastName, String ID, String userType, boolean isStaff){
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.ID = ID;
-		this.userType = userType;
-		this.isAlsoTutor = isAlsoTutor;
-	}
-
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
-	public String getID() {
-		return ID;
-	}
-
-	public void setID(String iD) {
-		ID = iD;
-	}
-
-	public String getUserType() {
-		return userType;
-	}
-
-	public void setUserType(String userType) {
-		this.userType = userType;
-	}
-
-	public boolean isAlsoTutor() {
-		return isAlsoTutor;
-	}
-
-	public void setTutor(boolean isAlsoTutor) {
-		this.isAlsoTutor = isAlsoTutor;
-	}
+	protected boolean isTutor;
+	protected LinkedList<String> courseList;
 	
+	protected Student(String id, String firstN, String lastN, String email, boolean isTutor, LinkedList<String> courseList) {
+		
+		super(id, firstN, lastN, email);
+		
+		this.isTutor = isTutor;
+		this.courseList = courseList;
+		
+	}
+
+	protected boolean isTutor() {
+		return isTutor;
+	}
+
+	protected void setTutor(boolean isTutor) {
+		this.isTutor = isTutor;
+	}
+
+	protected LinkedList<String> getCourseList() {
+		return courseList;
+	}
+
+	protected void setCourseList(LinkedList<String> courseList) {
+		this.courseList = courseList;
+	}
 	
 }
