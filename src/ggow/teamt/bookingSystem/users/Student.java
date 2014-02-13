@@ -1,19 +1,23 @@
 package ggow.teamt.bookingSystem.users;
 
+import ggow.teamt.bookingSystem.course.Course;
+
 import java.util.LinkedList;
 
 public class Student extends User{
 
 	protected boolean isTutor;
-	protected LinkedList<String> courseList;
+	protected LinkedList<Course> courseList;
 	
-	protected Student() {
+
+	public Student() {
 		super();
 		isTutor = false;
 		courseList = null;
 	}
 	
-	protected Student(String id, String firstN, String lastN, String email, boolean isTutor, LinkedList<String> courseList) {
+
+	public Student(String id, String firstN, String lastN, String email, boolean isTutor, LinkedList<Course> courseList) {
 		
 		super(id, firstN, lastN, email);
 		
@@ -22,20 +26,24 @@ public class Student extends User{
 		
 	}
 
-	protected boolean isTutor() {
+	public boolean isTutor() {
 		return isTutor;
 	}
 
-	protected void setTutor(boolean isTutor) {
+	public void setTutor(boolean isTutor) {
 		this.isTutor = isTutor;
 	}
 
-	protected LinkedList<String> getCourseList() {
+	public LinkedList<Course> getCourseList() {
 		return courseList;
 	}
 
-	protected void setCourseList(LinkedList<String> courseList) {
+	public void setCourseList(LinkedList<Course> courseList) {
 		this.courseList = courseList;
+	}
+	
+	public String toString(){
+		return "User id: " + this.id + "\nName: " + this.firstN + " " + this.lastN + "\nEmail: " + this.email + "\nUser type: student"; 
 	}
 	
 }

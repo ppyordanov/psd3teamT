@@ -10,7 +10,7 @@ public class Lecturer extends User{
 	
 	boolean isAdvisor;
 	
-	protected Lecturer() {
+	public Lecturer() {
 		super();
 		phoneN = 0;
 		office = null;
@@ -61,6 +61,8 @@ public class Lecturer extends User{
 		this.coursesT = coursesT;
 	}
 	
-	
+	public String toString(){
+		return "User id: " + this.id + "\nName: " + this.firstN + " " + this.lastN + "\nEmail: " + this.email + "\nUser type: lecturer" + "\nOffice: " + this.office ; 
+	}
 
 }

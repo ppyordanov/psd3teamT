@@ -7,7 +7,7 @@ public class User {
 	protected String lastN;
 	protected String email;
 	
-	protected User(String id, String firstN, String lastN, String email){
+	public User(String id, String firstN, String lastN, String email){
 		
 		this.id = id;
 		this.firstN = firstN;
@@ -16,36 +16,40 @@ public class User {
 		
 	}
 
-	protected String getId() {
+	public String getId() {
 		return id;
 	}
 
-	protected void setId(String id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
-	protected String getFirstN() {
+	public String getFirstN() {
 		return firstN;
 	}
 
-	protected void setFirstN(String firstN) {
+	public void setFirstN(String firstN) {
 		this.firstN = firstN;
 	}
 
-	protected String getLastN() {
+	public String getLastN() {
 		return lastN;
 	}
 
-	protected void setLastN(String lastN) {
+	public void setLastN(String lastN) {
 		this.lastN = lastN;
 	}
 
-	protected String getEmail() {
+	public String getEmail() {
 		return email;
 	}
 
-	protected void setEmail(String email) {
+	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	public String toString(){
+		return "User id: " + this.id + "\nName: " + this.firstN + " " + this.lastN + "\nEmail: " + this.email; 
 	}
 
 }
