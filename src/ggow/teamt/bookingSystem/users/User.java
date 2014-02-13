@@ -7,6 +7,13 @@ public class User {
 	protected String lastN;
 	protected String email;
 	
+	public User() {
+		id = null;
+		firstN = null;
+		lastN = null;
+		email = null;
+	}
+	
 	public User(String id, String firstN, String lastN, String email){
 		
 		this.id = id;
