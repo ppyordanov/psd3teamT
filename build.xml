@@ -103,7 +103,7 @@
 		
 		</jar>
 
-		<jar update="no" destfile="course.jar" manifest="config/osgi/USERS.MF">
+		<jar update="no" destfile="users.jar" manifest="config/osgi/USERS.MF">
 			
 			<fileset 
 				dir="bin/"
@@ -112,7 +112,7 @@
 		
 		</jar>
 		
-		<jar update="no" destfile="course.jar" manifest="config/osgi/LOGIN.MF">
+		<jar update="no" destfile="login.jar" manifest="config/osgi/LOGIN.MF">
 			
 			<fileset 
 				dir="bin/"
