@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Course Component
+Bundle-SymbolicName: ggow.teamt.bookingSystem.users
+Bundle-Version: 1.0.0
+Bundle-Activator: ggow.teamt.bookingSystem.users.Activator
+Bundle-Vendor: Team T
+Bundle-Localization: plugin
+Import-Package: ggow.teamt.bookingSystem.course,
+Export-Package: ggow.teamt.bookingSystem.users,
+  org.osgi.framework;version="1.3.0"
