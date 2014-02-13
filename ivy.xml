@@ -5,7 +5,6 @@
 	  organisation="ggow.teamt"
 	  module="bookingSystem"
 	  />
-	  
 
 	<dependencies>
 	
@@ -27,8 +26,6 @@
 		</dependency>
 		
 		<dependency org="com.javadocmd" name="simplelatlng" rev="1.0.1"/>
-           	
-           	<dependency org="log4j" name="log4j" rev="1.2.15"/>
            	
            	<dependency org="org.osgi" name="org.osgi.core" rev="4.3.0"/>
 			
