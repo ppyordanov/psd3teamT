@@ -7,6 +7,12 @@ public class Student extends User{
 	protected boolean isTutor;
 	protected LinkedList<String> courseList;
 	
+	protected Student() {
+		super();
+		isTutor = false;
+		courseList = null;
+	}
+	
 	protected Student(String id, String firstN, String lastN, String email, boolean isTutor, LinkedList<String> courseList) {
 		
 		super(id, firstN, lastN, email);

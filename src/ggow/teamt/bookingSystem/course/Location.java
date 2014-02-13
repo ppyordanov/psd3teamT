@@ -9,6 +9,14 @@ public class Location {
 	public String buildingName;
 	public String campus;
 	public int ID;
+	
+	public Location() {
+		name = null;
+		geoCoordinates = null;
+		buildingName = null;
+		campus = null;
+		ID = 0;
+	}
 
 	public Location(String name, LatLng geoCoordinates, String buildingName,
 			String campus, int iD) {

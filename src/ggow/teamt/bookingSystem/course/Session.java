@@ -11,6 +11,15 @@ public class Session {
 	public Time endTime;
 	public int duration; //in minutes
 	
+	public Session() {
+		name = null;
+		course = null;
+		location = null;
+		startTime = null;
+		endTime = null;
+		duration = 0;
+	}
+	
 	public Session(String name, Course course, Location location,
 			Time startTime, Time endTime, int duration) {
 		super();

@@ -3,6 +3,11 @@ package ggow.teamt.bookingSystem.users;
 public class Admin extends User {
 	
 	String department;
+	
+	protected Admin(){
+		super();
+		department = "null";
+	}
 
 	protected Admin(String id, String firstN, String lastN, String email, String department) {
 		

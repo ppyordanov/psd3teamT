@@ -9,6 +9,14 @@ public class Lecturer extends User{
 	protected LinkedList<String> coursesT;
 	
 	boolean isAdvisor;
+	
+	protected Lecturer() {
+		super();
+		phoneN = 0;
+		office = null;
+		coursesT = null;
+		
+	}
 
 	protected Lecturer(String id, String firstN, String lastN, String email, int phoneN, String office, LinkedList<String> coursesT, boolean isAdvisor) {
 		

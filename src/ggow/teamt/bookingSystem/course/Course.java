@@ -8,6 +8,12 @@ public class Course {
 	public int classSize;
 	public ArrayList<Session> sessions;
 	
+	public Course(Session session) {
+		name = null;
+		classSize = 0;
+		sessions = null;
+	}
+	
 	public Course(String name, int classSize){
 		this.name = name;
 		this.classSize = classSize;
