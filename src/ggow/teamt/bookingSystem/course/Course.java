@@ -11,7 +11,7 @@ public class Course {
 	protected LinkedList<Session> sessions;
 	protected Lecturer lecturer;
 	
-	public Course(Session session) {
+	public Course() {
 		name = null;
 		classSize = 0;
 		sessions = null;
