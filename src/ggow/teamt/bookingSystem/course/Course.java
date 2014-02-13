@@ -1,9 +1,14 @@
 package ggow.teamt.bookingSystem.course;
 
+import ggow.teamt.bookingSystem.session.Session;
+
+import java.util.ArrayList;
+
 public class Course {
 
 	public String name;
 	public int classSize;
+	public ArrayList<Session> sessions;
 	
 	public Course(String name, int classSize){
 		this.name = name;
