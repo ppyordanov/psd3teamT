@@ -14,7 +14,7 @@ Overall System Component Diagram - http://bit.ly/1jBGQfo
 
 Build Instructions
 ====
-To be added
+Should be a case of downloading the repo and running the build script correctly. Can also import to Eclipse using standard method.
 
 
 Team T
