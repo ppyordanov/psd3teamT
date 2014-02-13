@@ -10,8 +10,7 @@ To be done over 3 sprints
 
 Related files
 ====
-Database Schema - TBA
-Overall System Component Diagram - TBA
+Overall System Component Diagram - http://bit.ly/1jBGQfo
 
 Build Instructions
 ====
