@@ -1,6 +1,5 @@
-/bundle
-/bin
-/lib
-/users.jar
-/login.jar
-/course.jar
+bundle/
+bin/
+lib/
+
+*.jar
