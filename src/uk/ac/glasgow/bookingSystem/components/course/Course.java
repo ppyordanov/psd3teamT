@@ -1,8 +1,9 @@
-package ggow.teamt.bookingSystem.course;
+package uk.ac.glasgow.bookingSystem.components.course;
 
-import ggow.teamt.bookingSystem.users.Lecturer;
 
 import java.util.LinkedList;
+
+import uk.ac.glasgow.bookingSystem.components.users.Lecturer;
 
 public class Course {
 

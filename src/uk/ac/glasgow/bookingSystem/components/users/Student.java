@@ -1,8 +1,9 @@
-package ggow.teamt.bookingSystem.users;
+package uk.ac.glasgow.bookingSystem.components.users;
 
-import ggow.teamt.bookingSystem.course.Course;
 
 import java.util.LinkedList;
+
+import uk.ac.glasgow.bookingSystem.components.course.Course;
 
 public class Student extends User{
 

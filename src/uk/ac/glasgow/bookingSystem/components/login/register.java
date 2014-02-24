@@ -1,4 +1,4 @@
-package ggow.teamt.bookingSystem.login;
+package uk.ac.glasgow.bookingSystem.components.login;
 
 public class register {
 

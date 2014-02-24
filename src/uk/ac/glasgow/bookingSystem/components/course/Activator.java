@@ -1,4 +1,4 @@
-package ggow.teamt.bookingSystem.course;
+package uk.ac.glasgow.bookingSystem.components.course;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;

@@ -1,11 +1,12 @@
-package ggow.teamt.bookingSystem.users;
+package uk.ac.glasgow.bookingSystem.components.users;
 
-import ggow.teamt.bookingSystem.course.Course;
-import ggow.teamt.bookingSystem.course.Location;
-import ggow.teamt.bookingSystem.course.Session;
-import ggow.teamt.bookingSystem.course.dataStore;
 
 import java.util.LinkedList;
+
+import uk.ac.glasgow.bookingSystem.components.course.Course;
+import uk.ac.glasgow.bookingSystem.components.course.Location;
+import uk.ac.glasgow.bookingSystem.components.course.Session;
+import uk.ac.glasgow.bookingSystem.components.course.dataStore;
 
 public class Admin extends User {
 	
