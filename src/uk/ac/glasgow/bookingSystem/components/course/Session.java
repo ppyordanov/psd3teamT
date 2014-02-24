@@ -1,4 +1,4 @@
-package ggow.teamt.bookingSystem.course;
+package uk.ac.glasgow.bookingSystem.components.course;
 
 import java.sql.Time;
 

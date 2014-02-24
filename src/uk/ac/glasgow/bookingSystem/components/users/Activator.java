@@ -1,4 +1,4 @@
-package ggow.teamt.bookingSystem.users;
+package uk.ac.glasgow.bookingSystem.components.users;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;

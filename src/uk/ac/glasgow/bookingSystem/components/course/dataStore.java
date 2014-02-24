@@ -1,4 +1,4 @@
-package ggow.teamt.bookingSystem.course;
+package uk.ac.glasgow.bookingSystem.components.course;
 
 import java.util.LinkedList;
 
