@@ -16,7 +16,7 @@ To be done over 3 sprints
 * Overall System Component Diagram - http://bit.ly/1jBGQfo
 
 ### Build Instructions
-Should be a case of downloading the repo and running the build script correctly. Can also import to Eclipse using standard method.
+Should be a case of downloading the repo and running the build script correctly. Can also import to Eclipse using standard method. 
 
 ### Team T
 * Alastair Weir - 1101682w
