@@ -2,6 +2,7 @@ package uk.ac.glasgow.bookingSystem.components.course;
 
 import java.sql.Time;
 import java.sql.Date;
+
 /*
 Need to add following attributes:
 
@@ -108,16 +109,29 @@ public class Session {
 	}
 
 	public void setStartDate(Date startDate) {
-		this.startDate = startDate;
+		if (startDate.compareTo(this.endDate)>=0 || this.endDate == null)
+			this.startDate = startDate;
+		else
+			{
+			this.startDate = null;
+			System.out.println("Start date cannot be after End date! Start date set to Null.");
+			}
 	}
 	
 	public Date getEndDate() {
 		return endDate;
 	}
 
-	public void setEndDate(Date endDate) {
-		this.endDate = endDate;
-	}
+	public void setEndDate(Date endDate) 
+		{
+		if (endDate.compareTo(this.startDate)<=0 || this.startDate == null)
+			this.endDate = endDate;
+		else
+			{
+			this.endDate = null;
+			System.out.println("End date cannot be before Start date! End date set to Null.");
+			}
+		}
 	
 	public String getFrequency()
 		{
@@ -130,7 +144,11 @@ public class Session {
 			frequency == "monthly" || frequency == "yearly")
 			this.frequency = frequency;
 		else 
+			{
 			System.out.println("Not a correct frequency! The correct ones are: once, weekly, bi-monthly, monthly, yearly.");
+			System.out.println("Frequency set to Null");
+			this.frequency = null;
+			}
 		}
 	
 	public Boolean getRequired()
@@ -142,4 +160,9 @@ public class Session {
 		{
 		this.required = required;
 		}
+	
+/*	public Session getAllSessions()
+		{
+		
+		}*/
 }
