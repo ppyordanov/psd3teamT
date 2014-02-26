@@ -110,6 +110,7 @@ public class Session {
 	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
+	
 	public Date getEndDate() {
 		return endDate;
 	}
@@ -118,5 +119,27 @@ public class Session {
 		this.endDate = endDate;
 	}
 	
+	public String getFrequency()
+		{
+		return frequency;
+		}
 	
+	public void setFrequency(String frequency)
+		{
+		if (frequency == "once" || frequency == "weekly" || frequency == "bi-monthly" ||
+			frequency == "monthly" || frequency == "yearly")
+			this.frequency = frequency;
+		else 
+			System.out.println("Not a correct frequency! The correct ones are: once, weekly, bi-monthly, monthly, yearly.");
+		}
+	
+	public Boolean getRequired()
+		{
+		return required;
+		}
+	
+	public void setRequired(Boolean required)
+		{
+		this.required = required;
+		}
 }
