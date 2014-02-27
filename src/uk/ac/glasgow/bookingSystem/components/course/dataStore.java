@@ -3,7 +3,7 @@ package uk.ac.glasgow.bookingSystem.components.course;
 import java.util.LinkedList;
 
 public class dataStore {
-	public LinkedList<Course> courseList;
+	public ArrayList<Course> courseList;
 	
 	public dataStore(){
 		courseList = null;
