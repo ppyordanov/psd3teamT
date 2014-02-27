@@ -1,23 +1,25 @@
 package uk.ac.glasgow.bookingSystem.component.data;
+import java.util.LinkedList;
+
 import uk.ac.glasgow.bookingSystem.components.course.*;
 import uk.ac.glasgow.bookingSystem.components.users.*;
 
 public class data {
-	public ArrayList<Course> courses;
-	public ArrayList<User> users;
+	public LinkedList<Course> courses;
+	public LinkedList<User> users;
 	
 	public data() {
-		courses = new ArrayList<Course>();
-		users = new ArrayList<User>();
+		courses = new LinkedList<Course>();
+		users = new LinkedList<User>();
 		
-		users.add(new Admin);
+		users.add(new Admin());
 	}
 	
-	public data(ArrayList<Course> courses) {
+	public data(LinkedList<Course> courses) {
 		this.courses = courses;
 	}
 
-	public ArrayList<Course> getcourses() {
+	public LinkedList<Course> getcourses() {
 		return courses;
 	}
 	
