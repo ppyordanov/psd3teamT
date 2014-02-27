@@ -17,4 +17,29 @@ public class TestSteps {
 	private Student student;
 	private Admin admin;
 	private Lecturer lecturer;
+	
+	private Course course;
+	private Location location;
+	private Session session;
+	
+	
+	@Given("a student")
+	public void aStudent() {
+		this.student = new Student();
+	}
+	
+	@Given("an admin")
+	public void anAdmin() {
+		this.admin = new Admin();
+	}
+	
+	@Given("a lecturer")
+	public void aLecturer() {
+		this.lecturer = new Lecturer();
+	}
+	
+	@Then("create a student:$id, $firstN, $lastN, $email, $tutorStatus, $courselist")
+	public void createAStudent(String id, String firstN, String lastN, String email, boolean tutorStatus, ArrayList<Course> courselist){
+		admin.createStudent(id, firstN, lastN, email, tutorStatus, courselist);
+	}
 }

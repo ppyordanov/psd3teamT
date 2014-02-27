@@ -7,6 +7,8 @@ import uk.ac.glasgow.bookingSystem.components.course.Course;
 import uk.ac.glasgow.bookingSystem.components.course.Location;
 import uk.ac.glasgow.bookingSystem.components.course.Session;
 import uk.ac.glasgow.bookingSystem.components.course.dataStore;
+import uk.ac.glasgow.bookingSystem.test.steps.ArrayList;
+import uk.ac.glasgow.bookingSystem.test.steps.String;
 
 public class Admin extends User {
 	
@@ -55,6 +57,16 @@ public class Admin extends User {
 	public void changeLocation(Session S, Location l){
 		
 		S.setLocation(l);
+	}
+	
+	public boolean addStudent(String id, String firstN, String lastN, String email, 
+			boolean tutorStatus, ArrayList<Course> courselist) {
+		Student student = new Student(id, firstN, lastN, email, tutorStatus, courselist);
+		
+		//Add the student to the database here
+		//If successful, return true, else false
+		
+		return true;
 	}
 	
 	public String toString(){
