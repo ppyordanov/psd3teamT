@@ -16,7 +16,7 @@ public class Student extends User{
 		super();
 		isTutor = false;
 		courseList = null;
-		sessionsSignedUp=0;
+		sessionsSignedUp=null;
 	}
 
 
