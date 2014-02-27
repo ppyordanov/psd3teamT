@@ -38,8 +38,13 @@ public class TestSteps {
 		this.lecturer = new Lecturer();
 	}
 	
-	@Then("create a student:$id, $firstN, $lastN, $email, $tutorStatus, $courselist")
+	@When("create a student:$id, $firstN, $lastN, $email, $tutorStatus, $courselist")
 	public void createAStudent(String id, String firstN, String lastN, String email, boolean tutorStatus, ArrayList<Course> courselist){
-		admin.createStudent(id, firstN, lastN, email, tutorStatus, courselist);
+		boolean result = admin.createStudent(id, firstN, lastN, email, tutorStatus, courselist);
+		
+		assertThat(result, equalTo(true));
 	}
+	
+	@Then("check classes")
+	public void 
 }
