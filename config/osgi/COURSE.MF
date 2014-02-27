@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Course Component
-Bundle-SymbolicName: ggow.teamt.bookingSystem.course
+Bundle-SymbolicName: uk.ac.glasgow.bookingSystem.components.course
 Bundle-Version: 1.0.0
-Bundle-Activator: ggow.teamt.bookingSystem.course.Activator
+Bundle-Activator: uk.ac.glasgow.bookingSystem.components.course.Activator
 Bundle-Vendor: Team T
 Bundle-Localization: plugin
-Import-Package: ggow.teamt.bookingSystem.users,
-Export-Package: ggow.teamt.bookingSystem.course,
+Import-Package: uk.ac.glasgow.bookingSystem.components.users,
+Export-Package: uk.ac.glasgow.bookingSystem.components.course,
   org.osgi.framework;version="1.3.0"

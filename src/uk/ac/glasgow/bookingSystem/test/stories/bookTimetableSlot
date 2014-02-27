@@ -1,0 +1,14 @@
+Narrative :
+
+In order to be able to attend the compulsory sessions 
+As an student
+
+I want to be able to book a timetable slot
+
+
+Scenario : Student taking Software Engineering
+
+Given a Databases
+When the student signs up for the course they need to book required sessions
+Then checkout the available timeslots
+And book sessions

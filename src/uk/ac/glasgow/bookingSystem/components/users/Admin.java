@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import uk.ac.glasgow.bookingSystem.components.course.Course;
 import uk.ac.glasgow.bookingSystem.components.course.Location;
 import uk.ac.glasgow.bookingSystem.components.course.Session;
-import uk.ac.glasgow.bookingSystem.components.course.dataStore;
+import uk.ac.glasgow.bookingSystem.components.data.Data;
 
 public class Admin extends User {
 	
@@ -34,14 +34,16 @@ public class Admin extends User {
 		this.department = department;
 	}
 	
-	public void createCourse(String name, int classSize, LinkedList<Session> sessions, Lecturer lecturer){
+	public void createCourse(Data d, String name, int classSize, LinkedList<Session> sessions, Lecturer lecturer){
 		
 		Course newC = new Course(name,classSize,sessions, lecturer);
 		//courseList.add(newC);
+		d.courses.add(newC);
 		//TODO Make this refer to the dataStore class in course Module
 	}
 	
-	public void removeCourse(Course remC){
+	public void removeCourse(Data d, Course remC){
+		d.courses.remove(remC);
 		//courseList.remove(remC);
 		//TODO Make this refer to dataStore class in course Module
 	}
@@ -52,9 +54,24 @@ public class Admin extends User {
 		
 	}
 	
+	public void allSessionsAvailable(Data d, Course c) {
+		System.out.println(d.courses.toString());
+	}
+	
 	public void changeLocation(Session S, Location l){
 		
 		S.setLocation(l);
+	}
+	
+	public boolean addStudent(Data d, String id, String firstN, String lastN, String email, 
+			boolean tutorStatus, LinkedList<Course> courselist) {
+		Student student = new Student(id, firstN, lastN, email, tutorStatus, courselist);
+		
+		if(d.users.add(student)){
+			return true;
+		} else {
+			return false;
+		}
 	}
 	
 	public String toString(){
