@@ -50,4 +50,45 @@ public class TestSteps {
 		assertThat(result, equalTo(true));
 	}
 	
+	
+	@When("add sessions to course: session $s, course $c")
+	public void AddSession(Session s){
+		boolean expected = course.AddSessionToCourse(s);
+		boolean actual = course.existsSession(s);
+		
+		assertThat(actual, equalTo(expected);
+	}
+	
+	@When("a student signs up for a course and need to check book req. sessions: student $s, session $sess")
+	public void checkSessions(Student s,Session sess){
+		String expected = "";
+		String actual = s.checkSessionsSignedUp(); 
+		
+		assertThat(actual, equalTo(expected);
+	}
+	
+	@When("student needs to book. sessions: student $s, session $sess")
+	public void bookSession(Student s,Session sess){
+		boolean expected = true;
+		boolean actual = s.setSessionsSignedUp(s.getSessionsSignedUp().add(sess)); 
+		
+		assertThat(actual, equalTo(expected);
+	}
+	
+	@When("admin needs new timeslot for course: course &c, session $sess")
+	public void addTimeSlot(Course s,Session sess){
+		boolean expected = true;
+		boolean actual = admin.createSession(s, s); 
+		
+		assertThat(actual, equalTo(expected);
+	}
+	
+	@When("admin needs to change timeslot location: location &l, session $sess")
+	public void reviewTimeSlot(Location l,Session sess){
+		boolean expected = true;
+		boolean actual = admin.changeLocation(sess, l);
+		
+		assertThat(actual, equalTo(expected);
+	}
+	
 }
