@@ -54,6 +54,10 @@ public class Admin extends User {
 		
 	}
 	
+	public void allSessionsAvailable(Data d, Course c) {
+		System.out.println(d.courses.toString());
+	}
+	
 	public void changeLocation(Session S, Location l){
 		
 		S.setLocation(l);
