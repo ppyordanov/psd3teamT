@@ -3,16 +3,6 @@ package uk.ac.glasgow.bookingSystem.components.course;
 import java.sql.Time;
 import java.sql.Date;
 
-/*
-Need to add following attributes:
-
-    array of all sessions
-
-Also error checking when setting these.
-
-A method to getAllDates() and fill out the array for the session.
-*/
-
 
 public class Session {
 
@@ -161,8 +151,12 @@ public class Session {
 		this.required = required;
 		}
 	
-/*	public Session getAllSessions()
-		{
+	public String toString(){
 		
-		}*/
+		return "Session: " + this.getName() + "\nCourse: " + this.getCourse() + "\nLocation: " + this.getLocation().getBuildingName()
+				+ "\nStart time: " + this.getStartTime() + "\nEnd time: " + this.getEndTime() + "\nDuration: " + this.getDuration()
+				+ "\nFrequency: " + this.getFrequency() + "\nStart date: " + this.getStartDate() + "\nEnd date: " + this.getEndDate()
+				+ "\nRequired: " + this.getRequired();
+		
+	}
 }

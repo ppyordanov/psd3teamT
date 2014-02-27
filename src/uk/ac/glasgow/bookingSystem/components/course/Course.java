@@ -33,6 +33,14 @@ public class Course {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	public void AddSessionToCourse(Session s){
+		
+		LinkedList<Session> temp = this.getSessions();
+		temp.add(s);
+		this.setSessions(temp);
+		
+	}
 
 	public LinkedList<Session> getSessions() {
 		return sessions;
@@ -58,9 +66,17 @@ public class Course {
 		this.classSize = classSize;
 	}
 	
+	public String viewAllSessions(){
+		
+		return this.toString();
+		
+	}
+	
 	public String toString(){
-		String info = "Course name: " + this.name + "\nClass size: " + this.classSize + "\nSessions: " + this.sessions.toString() + "\nLecturer: " + this.lecturer;
-		return info;
+		
+		return "Course name: " + this.getName() + "\nClass size: " + this.getClassSize() + "\nLecturer: "
+				+ this.getLecturer() + "\nSessions: " + this.getSessions().toString();
+		
 	}
 	
 }
