@@ -1,4 +1,4 @@
-package uk.ac.glasgow.bookingSystem.component.data;
+package uk.ac.glasgow.bookingSystem.components.data;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
