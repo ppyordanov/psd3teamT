@@ -120,6 +120,15 @@
 			/>
 		
 		</jar>
+		
+		<jar update="no" destfile="data.jar" manifest="config/osgi/DATA.MF">
+			
+			<fileset 
+				dir="bin/"
+				includes="uk/ac/glasgow/bookingSystem/components/data/*.class"
+			/>
+		
+		</jar>
 
 	</target>
 	
