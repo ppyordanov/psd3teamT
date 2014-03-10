@@ -53,10 +53,12 @@ public class TestSteps {
 	
 	@When("add sessions to course: session $s, course $c")
 	public void AddSession(Session s){
-		boolean expected = course.AddSessionToCourse(s);
-		boolean actual = course.existsSession(s);
+		course.AddSessionToCourse(s);
+		//boolean actual = course.existsSession(s);
 		
-		assertThat(actual, equalTo(expected);
+		//assertThat(actual, equalTo(expected));
+		
+		//TODO add an @Then to finish this. Probably for the rest of the tests too.
 	}
 	
 	@When("a student signs up for a course and need to check book req. sessions: student $s, session $sess")
@@ -64,7 +66,7 @@ public class TestSteps {
 		String expected = "";
 		String actual = s.checkSessionsSignedUp(); 
 		
-		assertThat(actual, equalTo(expected);
+		assertThat(actual, equalTo(expected));
 	}
 	
 	@When("student needs to book. sessions: student $s, session $sess")
@@ -72,7 +74,7 @@ public class TestSteps {
 		boolean expected = true;
 		boolean actual = s.setSessionsSignedUp(s.getSessionsSignedUp().add(sess)); 
 		
-		assertThat(actual, equalTo(expected);
+		assertThat(actual, equalTo(expected));
 	}
 	
 	@When("admin needs new timeslot for course: course &c, session $sess")
@@ -80,7 +82,7 @@ public class TestSteps {
 		boolean expected = true;
 		boolean actual = admin.createSession(s, s); 
 		
-		assertThat(actual, equalTo(expected);
+		assertThat(actual, equalTo(expected));
 	}
 	
 	@When("admin needs to change timeslot location: location &l, session $sess")
@@ -88,7 +90,7 @@ public class TestSteps {
 		boolean expected = true;
 		boolean actual = admin.changeLocation(sess, l);
 		
-		assertThat(actual, equalTo(expected);
+		assertThat(actual, equalTo(expected));
 	}
 	
 }
